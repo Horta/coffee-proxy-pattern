@@ -14,5 +14,7 @@
     "test": "make test"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "coffee-script": "^1.12.3"
+  }
 }
