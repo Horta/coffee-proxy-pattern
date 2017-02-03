@@ -8,8 +8,7 @@
     "type": "git",
     "url": "https://github.com/Horta/coffee-proxy-pattern"
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "main": "./build/main.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
@@ -19,8 +18,7 @@
       "coffeeify"
     ]
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^10.2.0",
     "coffee-mate": "^0.9.0",
@@ -33,6 +31,7 @@
     "gulp-sourcemaps": "^1.5.1",
     "gulp-uglify": "^1.2.0",
     "gulp-util": "^3.0.4",
+    "jasmine": "^2.5.3",
     "mocha": "^2.2.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
