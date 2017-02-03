@@ -1,11 +1,11 @@
 # Source-code: https://github.com/wkf/proxy-class
 
 class Proxy
-  constructor: (obj, wrap = @wrap) ->
+  constructor: (obj, forward_call = @forward_call) ->
 
     for own name, value of Object.getPrototypeOf(obj)
       if value instanceof Function
-        value = wrap.bind
+        value = forward_call.bind
           context: obj,
           wrapped: value,
           name: "@#{name}",
@@ -14,7 +14,7 @@ class Proxy
 
     return this
 
-  wrap: ->
+  forward_call: ->
     @wrapped.apply(@context, arguments)
 
 module.exports = Proxy
