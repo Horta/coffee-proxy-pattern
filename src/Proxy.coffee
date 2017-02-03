@@ -1,4 +1,5 @@
 class Proxy
+  constructor: () ->
   method1: () ->
     5
 # export class Proxy
@@ -37,4 +38,6 @@ class Proxy
 #   wrap: ->
 #     @wrapped.apply(@context, arguments)
 
-module.exports = Proxy
+module.exports.create_proxy = () ->
+  proxy = new Proxy()
+  return proxy

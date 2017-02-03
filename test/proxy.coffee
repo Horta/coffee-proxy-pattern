@@ -1,24 +1,27 @@
-Proxy = require("../lib/proxy").Proxy
+create_proxy = require("../lib/proxy").create_proxy
 
-# class Example1
-#   method1: () ->
-#     1
-#
-#   method2: () ->
-#     1
+class Example1
+  constructor: () ->
+  method1: () ->
+    1
 
-# class Example1Proxy extends create_proxy(Example1)
-#   method1: () ->
-#     1
-#
-#   method2: () ->
-#     1
+  method2: () ->
+    2
+
+class Example1Proxy extends create_proxy(Example1)
+  constructor: () ->
+  method1: () ->
+    1
+
+  method2: () ->
+    2
 
 exports.setUp = (callback) ->
   callback()
 
 exports.example1 = (test) ->
   test.equal 3, 3
+  p = new Example1Proxy()
   test.done()
 
 # exports.first = (test) ->
