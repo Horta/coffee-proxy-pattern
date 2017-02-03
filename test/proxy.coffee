@@ -11,9 +11,6 @@ class Example1
     x
 
 class Example1Proxy extends Proxy
-  constructor: (obj) ->
-    super(obj)
-
   forward_call: () ->
     super + 1
 
