@@ -1,18 +1,18 @@
-import {Proxy} from "../lib/proxy"
+Proxy = require("../lib/proxy").Proxy
 
-class Example1
-  method1: () ->
-    1
+# class Example1
+#   method1: () ->
+#     1
+#
+#   method2: () ->
+#     1
 
-  method2: () ->
-    1
-
-class Example1Proxy extends create_proxy(Example1)
-  method1: () ->
-    1
-
-  method2: () ->
-    1
+# class Example1Proxy extends create_proxy(Example1)
+#   method1: () ->
+#     1
+#
+#   method2: () ->
+#     1
 
 exports.setUp = (callback) ->
   callback()

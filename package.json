@@ -9,7 +9,7 @@
     "url": "https://github.com/Horta/coffee-proxy-pattern"
   },
   "keywords": [],
-  "main": "lib/main.js",
+  "main": "lib/proxy.js",
   "scripts": {
     "test": "make test"
   },
