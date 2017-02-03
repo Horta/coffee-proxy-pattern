@@ -1,4 +1,4 @@
-class Proxy
+export class Proxy
   constructor: (klass, wrap = @wrap) ->
     _constructor = @_buildProxyConstructor(klass, wrap)
 
@@ -33,5 +33,3 @@ class Proxy
 
   wrap: ->
     @wrapped.apply(@context, arguments)
-
-module.exports = Proxy
