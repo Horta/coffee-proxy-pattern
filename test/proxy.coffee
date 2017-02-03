@@ -1,12 +1,12 @@
-db = {}
-refix = require('../lib/proxy')
-refixed = null
+# db = {}
+proxy = require('../lib/proxy')
+# refixed = null
 
-# exports.setUp = (callback) ->
-#   db = {}
-#   refixed = refix db
-#   callback()
-#
+exports.setUp = (callback) ->
+  # db = {}
+  # refixed = refix db
+  callback()
+
 # exports.first = (test) ->
 #   test.expect 2
 #

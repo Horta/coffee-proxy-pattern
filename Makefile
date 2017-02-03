@@ -15,10 +15,10 @@ clean: clean-docs
 	rm -rf lib/ test/*.js
 
 build:
-	coffee -o lib/ -c src/ && coffee -c test/refix.coffee
+	coffee -o lib/ -c src/ && coffee -c test/proxy.coffee
 
 test:
-	nodeunit test/refix.js
+	nodeunit test/proxy.js
 
 dist: clean init docs build test
 
