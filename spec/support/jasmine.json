@@ -3,9 +3,6 @@
   "spec_files": [
     "**/*[sS]pec.coffee"
   ],
-  "helpers": [
-    "helpers/**/*.coffee"
-  ],
   "stopSpecOnExpectationFailure": false,
   "random": false
 }
